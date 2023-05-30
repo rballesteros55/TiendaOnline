@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-carrousel></app-carrousel>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" *ngFor="let productItem of listaProductItem">
+      <app-product-item [product]="productItem"></app-product-item>
+    </div>
+  </div>
+</div>
